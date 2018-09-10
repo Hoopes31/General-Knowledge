@@ -1,9 +1,11 @@
 # Jenkins pipeline
+
 Introduction to setting up a Jenkins Pipeline
 
 This overview is based on a _[video](https://www.youtube.com/watch?v=ndLbn24OwQg&t=134s)_ by Raghav Pal
 
 ## Setting up the Delivery Pipline
+
 Setting up the pipeline view, creating default triggers 
 
 1. Download and install the **Delivery Pipeline Plugin** via the Jenkins Plugin Manager
@@ -16,7 +18,6 @@ Setting up the pipeline view, creating default triggers
 _There are quite a few customization options under the **Edit View** menu that are worth checking out_ 😊
 
 ## Setting up the Build Pipeline
-Summary
 
 1. Download and install **Build Pipeline** via the Jenkins Plugin Manager
 2. Select the + button on the Jenkins Jobs Table
@@ -25,6 +26,7 @@ Summary
 5. Set the **No Of Displayed Builds** to the number of build pipelines you wish to see
 
 ## Email notifications
+
 Enables email notifications to be sent in as post build actions
 
 1. Manage Jenkins -> Configure System: Scroll down to E-mail Notifications

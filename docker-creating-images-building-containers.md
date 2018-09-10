@@ -1,11 +1,16 @@
 # Docker creating images & building containers 🐋
+
 How to build a Dockerfile, converting the Dockerfile to an image, running the container
 
 This overview is based on a _[video](https://www.youtube.com/watch?v=LQjaJINkQXY)_ by Raghav Pal
 
+## What is a Dockerfile?
+
+Dockerfiles are a set of build instructions intended to build your docker image.
+
 ## Building Docker files
 
-1. Create a file named _Dockerfile.txt_ with the following contents
+1. Create a file named _Dockerfile_ with the following contents
     - **FROM {IMAGE/SCRATCH}** declares from where the image begins. Scratch gives you a blank image, which is a starting point for new images.
     - **MAINTAINER {YOUR-NAME} {<YOUR-EMAIL>}** contact information
     - **RUN {COMMANDS}** get executed during the building of an image
@@ -16,11 +21,12 @@ This overview is based on a _[video](https://www.youtube.com/watch?v=LQjaJINkQXY
 _There are many more commands that go into building a robust Dockerfile checkout the cheat sheet below to get started_
 
 ### Example file
-```
+
+``` Dockerfile
 # basic Dockerfile
 FROM ubuntu
 
-MAINTAINER anthony 
+MAINTAINER anthony
 
 RUN apt-get update
 
@@ -28,4 +34,5 @@ CMD ["echo", "Hello Docker!"]
 ```
 
 ## Guide sites
+
 [Dockerfile cheat sheet](https://github.com/wsargent/docker-cheat-sheet#dockerfile)
